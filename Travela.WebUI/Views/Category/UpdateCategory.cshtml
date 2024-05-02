@@ -1,0 +1,20 @@
+﻿@model Travela.WebUI.Dtos.UpdateCategoryDto
+@{
+    Layout = null;
+}
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+<form method="post">
+    <div class="container">
+        <br /><br />
+        <input type="hidden" asp-for="categoryId" />
+        <label>Şehir</label>
+        <input type="text" asp-for="categoryName" class="form-control" />
+        <br />
+        <label>Kategori Görseli</label>
+        <input type="text" asp-for="imageUrl" class="form-control" />
+        <br />
+        
+        <button class="btn btn-success">Kategoriyi Güncelle</button>
+    </div>
+</form>
