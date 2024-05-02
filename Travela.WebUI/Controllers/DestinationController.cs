@@ -13,7 +13,7 @@ namespace Travela.WebUI.Controllers
         {
             _httpClientFactory = httpClientFactory;
         }
-
+        /*deneme*/
         public async Task<IActionResult> DestinationList()
         {
             var client = _httpClientFactory.CreateClient();
